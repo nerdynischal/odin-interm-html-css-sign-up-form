@@ -97,6 +97,7 @@ input {
   border: 0.1rem solid #dcdcdc;
   padding: 0.3rem;
   border-radius: 0.2rem;
+  outline: none;
 }
 
 label {
@@ -130,4 +131,13 @@ h2 {
   color: purple;
   font-weight: 500;
   text-decoration: underline;
+}
+
+input:invalid {
+  border-color: red;
+}
+
+input:focus {
+  border-color: blue;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.173);
 }
